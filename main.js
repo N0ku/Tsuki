@@ -24,6 +24,7 @@ function sendMsg() {
     channelIds.forEach(id => {
         const channel = client.channels.cache.get(id);
         channel.send("Test Channel");
+        channel.send("Test mon message");
     });
 }
 
